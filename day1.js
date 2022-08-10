@@ -1,40 +1,53 @@
-var number = 5;
-console.log(number);
-
-let a = 5;
-let b = 6;
-let c = 6;
-
-console.log(a);
 
 
+const number1 = document.getElementById("number1")
+const number2 = document.getElementById("number2")
+const result = document.getElementById("result")
+const operator = document.getElementById("operator")
 
-let day = 9
+function sumUp (number1, number2) {
+return Number(number1)+ Number(number2)
+}
+function minus (number1, number2) {
+  return Number(number1)- Number(number2)
+  }
+function dev (number1, number2) {
+    return Number(number1)/ Number(number2)
+    }
+function multi (number1, number2) {
+    return Number(number1)* Number(number2)
+      }
 
-switch (day) {
-  case 7:
-    console.log("It's Sunday!");
+function calculate (operator){
+switch(operator.value) {
+  case "+":
+    var sum = sumUp(number1.value, number2.value );
+    result.value = sum.toString();
     break;
-  case 1:
-    console.log("It's Monday");
+  case "-":
+    var min = minus(number1.value, number2.value );
+    result.value = min.toString();
     break;
-  case 2:
-    console.log("It's Tuesday");
+  case "/":
+    var div = dev(number1.value, number2.value );
+    result.value = div.toString();
     break;
-  case 3:
-    console.log("It's Wednesday");
-    break;
-  case 4:
-    console.log("It's Thursday");
-    break;
-  case 5:
-    console.log("It's Friday");
-    break;
-  case 6:
-    console.log("It's Saturday");
+  case "*":
+    var mult = multi(number1.value, number2.value );
+    result.value = mult.toString();
     break;
   default:
-    console.log("pls select another number");
-    break;
+    // code block
 }
+};
 
+function myFunction() {
+  let number;
+  let person = prompt("Please enter your age:", "your age");
+  if (person == null || person == "") {
+    number = "User cancelled the prompt.";
+  } else {
+    number = "You are " + person + " years old";
+  }
+  document.getElementById("demo").innerHTML = number;
+}
