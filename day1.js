@@ -14,7 +14,7 @@ function minus (number1, number2) {
 function dev (number1, number2) {
     return Number(number1)/ Number(number2)
     }
-function multi (number1, number2) {
+function multiply (number1, number2) {
     return Number(number1)* Number(number2)
       }
 
@@ -32,12 +32,10 @@ switch(operator.value) {
     var div = dev(number1.value, number2.value );
     result.value = div.toString();
     break;
-  case "*":
-    var mult = multi(number1.value, number2.value );
+  default:
+    var mult = multiply(number1.value, number2.value );
     result.value = mult.toString();
     break;
-  default:
-    // code block
 }
 };
 
