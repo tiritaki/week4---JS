@@ -49,3 +49,19 @@ function myFunction() {
   }
   document.getElementById("demo").innerHTML = number;
 }
+
+const cars = ["Saab", "Volvo", "BMW"];
+for ( i in cars) {
+  console.log(cars[i])
+  let carname=cars[i]
+  if ("Volvo" == carname) {
+    console.log( `Welcome ${carname}`)}
+  else {console.log("Sorry this car not in list");}
+  }
+
+  let containers = document.getElementsByClassName('dom')[2];
+  console.log(containers)
+
+  let paragr = document.getElementsByTagName("p")[3].innerText;
+  console.log(typeof(Number(paragr)))
+
