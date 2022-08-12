@@ -6,3 +6,11 @@ h1 {
 body {
     margin-left: 100px;
 }
+
+#myID {
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    text-align: center;
+    padding-top: 30px;
+  }

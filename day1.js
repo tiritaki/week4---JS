@@ -65,3 +65,13 @@ for ( i in cars) {
   let paragr = document.getElementsByTagName("p")[3].innerText;
   console.log(typeof(Number(paragr)))
 
+  document.getElementById("myID").addEventListener("mouseover", function() {
+    document.getElementById("myID").style.backgroundColor = "green";
+});
+    
+document.getElementById("myID").addEventListener("mouseout", function() {
+    document.getElementById("myID").style.backgroundColor = "red";
+});
+
+
+
