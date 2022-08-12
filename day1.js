@@ -62,11 +62,11 @@ for ( i in cars) {
   let containers = document.getElementsByClassName('dom')[2];
   console.log(containers)
 
-  let paragr = document.getElementsByTagName("p")[3].innerText;
-  console.log(typeof(Number(paragr)))
+  let paragr = document.getElementsByTagName("p")[3].innerHTML;
+  console.log(paragr)
 
   document.getElementById("myID").addEventListener("mouseover", function() {
-    document.getElementById("myID").style.backgroundColor = "green";
+  document.getElementById("myID").style.backgroundColor = "green";
 });
     
 document.getElementById("myID").addEventListener("mouseout", function() {
@@ -74,4 +74,7 @@ document.getElementById("myID").addEventListener("mouseout", function() {
 });
 
 
-
+function changebackground(){
+  const color = document.getElementById("textInput").value;
+	document.body.style.backgroundColor = color;
+}
